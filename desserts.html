@@ -57,21 +57,33 @@
 
     <p>When reducing the size of the browser window, the row with the dessert names breaks first. This is because the class `col-md` is designed to be responsive and adjusts the layout more fluidly as the screen size decreases, whereas `col-sm-2` maintains a fixed column width across smaller screens.</p>
 </div>
-
-        <div class="container mt-2">
-            
-          <img src="napoleon.png" alt="Napoleon Dessert" class="img-fluid" style="width: 300px; height: 300px;">
-          <img src="Applepie.png" alt="Apple Pie" class="img-fluid" style="width: 300px; height: 300px;">
-          <img src="Redvelvet.png" alt="Apple Pie" class="img-fluid" style="width: 300px; height: 300px;">        
-          </div>
-
-        <!--Thumbnails -->
-        <div class="container mt-2">
-          <img src="napoleon.png" alt="Napoleon Dessert" class="img-thumbnail" style="width: 150px; height: 150px;">
-          <img src="Applepie.png" alt="Apple Pie" class="img-thumbnail" style="width: 150px; height: 150px;">
-          <img src="Redvelvet.png" alt="Red Velvet Cake" class="img-thumbnail" style="width: 150px; height: 150px;">
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <img src="napoleon.png" alt="Napoleon" class="img-fluid" style = "width: 400px; height: 400px;">
+        </div>
+        <div class="col-md">
+            <img src="Applepie.png" alt="Applepie" class="img-fluid " style = "width: 400px; height: 400px;">
+        </div>
+        <div class="col-md">
+            <img src="Gelato.jpeg" alt="Gelato" class="img-fluid" style = "width: 400px; height: 400px;">
+        </div>
     </div>
+</div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+            <img src="napoleon.png" alt="Napoleon Thumbnail" class="img-thumbnail" style = "width: 100px; height: 100px;">
+        </div>
+        <div class="col-md">
+            <img src="Applepie.png" alt="Applepie Thumbnail" class="img-thumbnail" style = "width: 100px; height: 100px;">
+        </div>
+        <div class="col-md">
+            <img src="Gelato.jpeg" alt="Gelato Thumbnail" class="img-thumbnail" style = "width: 100px; height: 100px;">
+        </div>
+    </div>
+</div>
     <div class="container mt-4">
       <caption>Desserts, Cities, and Insects by Letter</caption>
       <table class="table table-bordered table-striped table-hover table-sm">
@@ -144,42 +156,37 @@
         
     </div>
 </div>
-<div class="dropdown mt-2">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-      Choose a Page
-  </button>
+<div class="container mt-4">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+           Choose a Page
+        </button>
 
-  
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
-      <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
-  </ul>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="basic.html">Basic Page</a>
+            <a class="dropdown-item" href="Advanced.html">Advanced Page</a>
+        </div>
+    </div>
 </div>
 
-<form>
-  
-  <div class="form-group mt-2">
-      <label for="emailInput">Email address</label>
-      <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-
-  
-  <div class="form-group">
-      <label for="dessertInput">Dessert</label>
-      <input type="text" class="form-control" id="dessertInput" placeholder="Enter your dessert">
-  </div>
-
-  
-  <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="newsletterCheck">
-      <label class="form-check-label" for="newsletterCheck">Sign up for newsletter?</label>
-  </div>
-
- 
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
+<div class="container mt-4">
+    <form>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="dessert">Dessert</label>
+            <input type="text" class="form-control" id="dessert" placeholder="Enter your dessert">
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="newsletter">
+            <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+</div>
 <!-- Bonus -->
 <div class="container mt-2">
   <div class="row">
@@ -210,11 +217,11 @@
       <!-- Third Card -->
       <div class="col-sm-4">
           <div class="card">
-              <img src="Redvelvet.png" class="card-img-top" alt="Red Velvet Cake">
+              <img src="Gelato.jpeg" class="card-img-top" alt="Gelato">
               <div class="card-body">
-                  <h5 class="card-title">Red Velvet Cake</h5>
-                  <p class="card-text">A Southern classic with a vibrant red hue and rich, velvety texture paired with a tangy cream cheese frosting.</p>
-                  <a href="https://en.wikipedia.org/wiki/Red_velvet_cake" class="btn btn-primary" target="_blank">Learn more</a>
+                  <h5 class="card-title">Gelato Ice Cream</h5>
+                  <p class="card-text">Gelato translates to "Ice Cream" in Italian, but this desserts texture is denser, smoother and richer.</p>
+                  <a href="https://en.wikipedia.org/wiki/Gelato" class="btn btn-primary" target="_blank">Learn more</a>
               </div>
           </div>
       </div>
